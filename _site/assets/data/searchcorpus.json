@@ -42,14 +42,6 @@
 }, 
  
 { 
-"title"    : "Saaketh Reddy | Portfolio", 
-"desc"     : "Saaketh Reddy | Portfolio", 
-"category" : "page", 
-"url"      : "/", 
-"date"     : "January 1, 1970" 
-}, 
- 
-{ 
 "title"    : "About Me", 
 "desc"     : "About Me", 
 "category" : "page", 
