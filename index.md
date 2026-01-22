@@ -109,9 +109,9 @@ permalink: /
     <div class="explore-section">
       <ul class="explore-links">
         <li><a href="/education"><span class="link-title">📚 Education</span><span class="link-description">My academic background and coursework</span></a></li>
-        <li><a href="/work-experience"><span class="link-title">💼 Work Experience</span><span class="link-description">Professional experience</span></a></li>
+        <li><a href="/work-experience"><span class="link-title">💼 Work Experience</span><span class="link-description">Places I got paid for my work</span></a></li>
         <li><a href="/research"><span class="link-title">🔬 Research</span><span class="link-description">Publications, working papers, and research interests</span></a></li>
-        <li><a href="/projects"><span class="link-title">🚀 Projects</span><span class="link-description">Technical projects and developments</span></a></li>
+        <li><a href="/projects"><span class="link-title">🚀 Projects</span><span class="link-description">A showcase of projects I worked on</span></a></li>
       </ul>
     </div>
 

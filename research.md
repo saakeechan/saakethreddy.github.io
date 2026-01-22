@@ -3,7 +3,7 @@ layout: default
 title: Research
 permalink: /research/
 ---
-# Research    
+# Publications   
 
 ### LiDAR-Informed, Terrain-Adaptive Invariant Kalman Filtering for Legged Robots
 **Authors:** Saaketh Reddy, Ziwon Yoon  
@@ -15,8 +15,8 @@ This paper presents a terrain-aware invariant extended Kalman filter (InEKF) tha
 
 [Wendy N. Newcomb, Saaketh Reddy, Aprameya Satish, Alessio Medda; Time-frequency spectral optimization of underwater sonar acoustic returns for the purpose of characterization using spectral descriptors J. Acoust. Soc. Am. 1 October 2024; 156 (4_Supplement): A25–A26](https://doi.org/10.1121/10.0034982)
 
-**Abstract:**  
-This work studies time-varying underwater sonar returns to extract object and seafloor characteristics relevant to mine countermeasures. It compares several time-frequency representations (STFT, smoothed pseudo Wigner–Ville, empirical wavelet, and chirplet transforms) using spectral concentration and resolution metrics. The impact of optimized transforms is evaluated through time-frequency spectral descriptors.
+- Developed a MATLAB-based framework to optimize signal detection using the smoothed pseudo Wigner–Ville distribution [(SPWVD)](https://en.wikipedia.org/wiki/Modified_Wigner_distribution_function)
+- Conducted a quantitative comparative study against alternative time–frequency representations to evaluate the impact of the optimization
 
 **Keywords:** Keywords: underwater sonar, time-frequency analysis, spectral concentration, mine countermeasures
 
@@ -41,8 +41,8 @@ This work studies time-varying underwater sonar returns to extract object and se
 *January 2025 – August 2025*
 
 - Successfully led an undergraduate team to design and prototype a magnetically actuated, jellyfish-inspired soft robot
-- Polarizer sim
-- Led undergrad team
+
+[View Project Details →](/projects/#jellyfish-inspired-soft-robot)
 
 ---
 

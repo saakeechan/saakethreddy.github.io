@@ -56,7 +56,7 @@ permalink: /education/
 **[Georgia Institute of Technology](https://www.gatech.edu/)**  
 *Graduated: May 2025*  
 **GPA:** 3.9/4.0  
-*Highest Honors*
+*Graduated with Highest Honors*  
 *Faculty Honors x 6*  
 *Dean's List x 3*
 

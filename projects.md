@@ -6,54 +6,271 @@ permalink: /projects/
 
 # My Projects
 
-## Project One
-A comprehensive web application built with modern technologies. Features include user authentication, real-time updates, and responsive design.
+<style>
+  .slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .slide {
+    display: none;
+  }
+  .slide.active {
+    display: block;
+  }
+  .slide img, .slide video {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .slide-caption {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    margin: 15px 0;
+    font-size: 1.1em;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    user-select: none;
+  }
+  .next {
+    right: 10px;
+  }
+  .prev {
+    left: 10px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dots {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .dot.active {
+    background-color: #667eea;
+  }
+</style>
 
-**Technologies:** JavaScript, React, Node.js
+## Jellyfish inspired soft robot
+I designed and fabricated a jellyfish inspired soft robot that is magnetically actuated, so one can study the efficiency and thrust behavior of jellyfish. [Link to article](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=41cBkTsAAAAJ&sortby=pubdate&citation_for_view=41cBkTsAAAAJ:mVmsd5A6BfQC)  
 
-[View Project →](https://github.com/yourusername/project-one)
+[Link to Linkedin Post](https://www.linkedin.com/posts/mohammad-mohaghar-58254180_fluiddynamics-softrobotics-biomimicry-ugcPost-7317370218140340226-VcsT?utm_source=share&utm_medium=member_desktop&rcm=ACoAACy4wIsBWSE2KEbvIityOIl0HIDmpJLNE54) 
+
+<div class="slideshow-container" id="slideshow1">
+
+  <div class="slide active">
+    <video controls>
+      <source src="/assets/figures/swimmingMainVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">After a full semester of many many iterations and back to the white board moments, the robot finally swam. </p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/swimmingPolarizer.png" alt="Project screenshot 2">
+    <p class="slide-caption">An ingenious method to increase magnetic polarizing capability. The magnetic coils in the lab were only capable of producing 0.75 Teslas. We needed atleast 1.2T to polarize the magnetic particles in the robot's appendages and a sufficiently strong polarizer would cost the lab $10000. I proposed to put a bunch of soft iron cones to concentrate the magnetic field into the appendage, simulated  the magnetic fields, designed and manufactured a novel polarizing setup (seen in pink) and acheived 1.5T!</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/swimmingCadPic.png" alt="Project screenshot 1">
+    <p class="slide-caption">"I was responsible for the mold design, robot fabrication, and the development of a detailed, end-to-end manufacturing procedure. Getting the molds right was the hardest part because we're talking about sub millimeter level precision given the capabilities of makerspace printers. I had to get every chamfer, layer height, material exactly right to pull this off" </p>
+  </div>
+
+ <div class="slide">
+    <img src="/assets/figures/swimmingFailurePics.png" alt="Project screenshot 1">
+    <p class="slide-caption">A snippet of Murphy's Law: "What could go wrong will go wrong" </p>
+  </div>
+  
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/swimmingFailVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">How the robot should not move </p>
+  </div>
+
+
+  
+
+  
+
+  
+  <a class="prev" onclick="changeSlide(-1, 'slideshow1')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow1')">❯</a>
+  
+  <div class="dots" id="dots-slideshow1"></div>
+</div>
+
+<script>
+// Initialize slideshow - automatically generate dots
+function initSlideshow(slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.querySelectorAll('.slide');
+  const dotsContainer = document.getElementById('dots-' + slideshowId);
+  
+  // Generate dots dynamically based on number of slides
+  dotsContainer.innerHTML = '';
+  slides.forEach((slide, index) => {
+    const dot = document.createElement('span');
+    dot.className = 'dot' + (index === 0 ? ' active' : '');
+    dot.onclick = function() { currentSlide(index + 1, slideshowId); };
+    dotsContainer.appendChild(dot);
+  });
+}
+
+function changeSlide(n, slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.querySelectorAll('.slide');
+  const dots = slideshow.querySelectorAll('#dots-' + slideshowId + ' .dot');
+  
+  let currentIndex = 0;
+  slides.forEach((slide, index) => {
+    if (slide.classList.contains('active')) {
+      currentIndex = index;
+    }
+  });
+  
+  slides[currentIndex].classList.remove('active');
+  dots[currentIndex].classList.remove('active');
+  
+  currentIndex += n;
+  if (currentIndex >= slides.length) currentIndex = 0;
+  if (currentIndex < 0) currentIndex = slides.length - 1;
+  
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+
+function currentSlide(n, slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.querySelectorAll('.slide');
+  const dots = slideshow.querySelectorAll('#dots-' + slideshowId + ' .dot');
+  
+  slides.forEach((slide, index) => {
+    slide.classList.remove('active');
+    dots[index].classList.remove('active');
+  });
+  
+  slides[n-1].classList.add('active');
+  dots[n-1].classList.add('active');
+}
+
+// Automatically initialize all slideshows on page load
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all slideshow containers and initialize them
+  const slideshows = document.querySelectorAll('.slideshow-container');
+  slideshows.forEach(slideshow => {
+    initSlideshow(slideshow.id);
+  });
+});
+</script>
 
 ---
 
-## Project Two
-An innovative mobile application that solves real-world problems. Built with cross-platform compatibility and a focus on user experience.
+## Headphones
+Capstone project! Designed and manufactured the complete mechanical parts for a noise cancelling headphones pair. Tried my hand in product design and absolutelly crushed it. Visitors at the expo couldn't believe the headphones were not bought but made.
 
-**Technologies:** Python, Flask, API
+[View Presentation (PDF)](/assets/files/headphonesFinalPPT.pdf)
 
-[View Project →](https://github.com/yourusername/project-two)
+<div class="slideshow-container" id="slideshow2">
+
+  <div class="slide active">
+    <img src="/assets/figures/headphonesPhotoshoot.png" alt="Headphones photoshoot">
+    <p class="slide-caption">Final product photoshoot</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/headphonesIsometricCad.png" alt="Headphones isometric CAD">
+    <p class="slide-caption">Isometric CAD view of the headphones design</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/headphonesExplodedView.png" alt="Headphones exploded view">
+    <p class="slide-caption">Exploded view showing all components</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/headphonesCrossSection.png" alt="Headphones cross section">
+    <p class="slide-caption">Cross-sectional view of the headphones</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/headphonesHumanHead.png" alt="Headphones on human head">
+    <p class="slide-caption">Headphones fit analysis on human head model</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/headphonesPaint.png" alt="Headphones painting">
+    <p class="slide-caption">Custom paint finish</p>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+  
+  <div class="dots" id="dots-slideshow2"></div>
+</div>
 
 ---
 
-## Project Three
-A data analysis tool that provides insights and visualizations. Leverages machine learning algorithms for predictive analytics.
+## Gesture controlled RC car
+A car on omniwheels thats controlled with simply the movement of your arm
 
-**Technologies:** Python, Data Science, ML
+<div class="slideshow-container" id="slideshow3">
 
-[View Project →](https://github.com/yourusername/project-three)
+  <div class="slide active">
+    <video controls>
+      <source src="/assets/figures/carBackandForth.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Demonstration of the car moving back and forth</p>
+  </div>
 
----
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/carWithWeight.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Testing the car with additional weight</p>
+  </div>
 
-## Project Four
-An open-source library that simplifies complex workflows. Well-documented with comprehensive test coverage and community support.
+  <div class="slide">
+    <img src="/assets/figures/carOmniWheelsPic.png" alt="Omni wheels">
+    <p class="slide-caption">Omni wheels configuration</p>
+  </div>
 
-**Technologies:** Java, Open Source, Library
-
-[View Project →](https://github.com/yourusername/project-four)
-
----
-
-## Project Five
-A full-stack e-commerce platform with payment integration. Features shopping cart, order management, and admin dashboard.
-
-**Technologies:** TypeScript, MongoDB, Express
-
-[View Project →](https://github.com/yourusername/project-five)
-
----
-
-## Project Six
-A DevOps automation tool that streamlines deployment workflows. Supports CI/CD pipelines and infrastructure as code.
-
-**Technologies:** Docker, Kubernetes, CI/CD
-
-[View Project →](https://github.com/yourusername/project-six)
+  <div class="slide">
+    <img src="/assets/figures/carDebuggingMCU.jpg" alt="Debugging MCU">
+    <p class="slide-caption">Debugging the microcontroller unit</p>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
+  
+  <div class="dots" id="dots-slideshow3"></div>
+</div>
