@@ -31,6 +31,13 @@ permalink: /
     margin-top: 40px;
     margin-bottom: 50px;
   }
+  .welcome-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+  }
   .explore-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -97,6 +104,7 @@ permalink: /
 <div class="about-container">
   <div class="about-text">
     
+    <h1 class="welcome-title">Hello! Welcome to my page</h1>
     
     <div class="explore-section">
       <ul class="explore-links">
