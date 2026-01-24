@@ -148,7 +148,7 @@ Coilgun company
 
 <div class="slideshow-container" id="slideshow3">
 
-  <div class="slide">
+  <div class="slide active">
     <img src="/assets/figures/auriga3DPrinters.jpg" alt="3D printers">
     <p class="slide-caption">3D printing farm. I sold the promise of 3D printing, and next thing we know I was head of the 3D printing department. I ordered, built, maintained all 2 large scale printers, 2 bambu printers, and a resin printer. I was also the go to guy for any part involving 3D printing and rapid prototyping. My parts were not only used as cheap tools but for actual high load bearing purposes so I had to do structural analysis on most my parts.</p>
   </div>
@@ -203,7 +203,7 @@ Coilgun company
     <p class="slide-caption">Late night design brainstorm sessions with my mentor Patrick</p>
   </div>
 
-  <div class="slide active">
+  <div class="slide">
     <video controls>
       <source src="/assets/figures/aurigaBikeBeingStolen.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -429,39 +429,33 @@ A car on omniwheels thats controlled by simply moving your hand. This was made f
 ---
 
 ## [GelSight](https://www.gelsight.com/)
-Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walking behaviors and Mujuco's terrain parameters. my PhD mentor was using NN to teach Digit to avoid elevated and irregular terrain. My goal was to design the terrain just right for Digit to barely walk. I also wrote an innovative algorithm to group objects for easier collision detection. 
+Worked with tactile sensing technology to enable robots to perceive surface textures and deformations through touch, enhancing manipulation capabilities.
 
 **Technologies:** CAD, Fabrication, Polymer science, Actuator Design
 
 <div class="slideshow-container" id="slideshow7">
 
   <div class="slide active">
-    <video controls>
-      <source src="/assets/figures/digitWalkingCloseup.mp4" type="video/mp4">
+    <video controls style="max-width: 60%; display: block; margin: 0 auto;">
+      <source src="/assets/figures/gelsightGearPulley.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Close-up view of Digit walking to get a better look at slip behavior and Mujoco's contact solver parameters</p>
+    <p class="slide-caption">Designed a gear pulley mechanism for the parallel gripper for Digit Robot. This also allows precise reading of precise torque from servo motor to force in gelsight. The previous cable driven mechansim was causing many issues</p>
   </div>
 
   <div class="slide">
-    <video controls>
-      <source src="/assets/figures/digitWalkingSlope.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="slide-caption">Digit walking on sloped terrain. It's learning it's behavior on slope (moreso to avoid it)</p>
+    <img src="/assets/figures/gelsightCablePulley.png" alt="GelSight cable pulley">
+    <p class="slide-caption">Cable pulley system design. I initially built this from a previous iteration but it was causing slip and slack issues</p>
   </div>
 
   <div class="slide">
-    <video controls>
-      <source src="/assets/figures/digitWalkingWithParameters.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="slide-caption">Learning its gait placement on irregular terrain</p>
+    <img src="/assets/figures/gelsightPolymer.png" alt="GelSight polymer">
+    <p class="slide-caption">Polymer material used for tactile sensing. I pulled vacuum from the solution and constructed polymers as clear as possible</p>
   </div>
 
   <div class="slide">
-    <img src="/assets/figures/digitOptimization.png" alt="Digit optimization">
-    <p class="slide-caption">I also wrote an algorithm to group multiple objects together for collision avoidance. Digit discretizes every obstacle in front of it and runs a collision check and this gets redundant if there's a large object and Digit has to run a collision check for each and every point. With my algorithm, it groups all points into rectangles and does a single collision check for a rectangle as a whole. Improved speed by almost 10x</p>
+    <img src="/assets/figures/gelsightCreepyUncle.jpg" alt="GelSight application">
+    <p class="slide-caption">Me acting cool</p>
   </div>
   
   <a class="prev" onclick="changeSlide(-1, 'slideshow7')">❮</a>
