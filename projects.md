@@ -77,6 +77,148 @@ permalink: /projects/
   }
 </style>
 
+## Optimal Control
+Implemented various optimal control algorithms and simulations for robotic systems.
+
+**Skills:** Python, MATLAB, Control Theory, Optimization, Simulation
+
+<div class="slideshow-container" id="slideshow1">
+
+  <div class="slide active">
+    <img src="/assets/figures/OCHw1Q2.png" alt="Optimal Control Problem">
+    <p class="slide-caption">Optimal control problem formulation and solution</p>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1, 'slideshow1')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow1')">❯</a>
+  
+  <div class="dots" id="dots-slideshow1"></div>
+</div>
+
+---
+
+## Digit in MuJoCo
+Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walking behaviors and Mujuco's terrain parameters. my PhD mentor was using NN to teach Digit to avoid elevated and irregular terrain. My goal was to design the terrain just right for Digit to barely walk. I also wrote an innovative algorithm to group objects for easier collision detection. 
+
+**Skills:** ROS, Python, C++, Mujoco, Docker
+
+<div class="slideshow-container" id="slideshow2">
+
+  <div class="slide active">
+    <video controls>
+      <source src="/assets/figures/digitWalkingCloseup.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Close-up view of Digit walking to get a better look at slip behavior and Mujoco's contact solver parameters</p>
+  </div>
+
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/digitWalkingSlope.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Digit walking on sloped terrain. It's learning it's behavior on slope (moreso to avoid it)</p>
+  </div>
+
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/digitWalkingWithParameters.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Learning its gait placement on irregular terrain</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/digitOptimization.png" alt="Digit optimization">
+    <p class="slide-caption">I also wrote an algorithm to group multiple objects together for collision avoidance. Digit discretizes every obstacle in front of it and runs a collision check and this gets redundant if there's a large object and Digit has to run a collision check for each and every point. With my algorithm, it groups all points into rectangles and does a single collision check for a rectangle as a whole. Improved speed by almost 10x</p>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+  
+  <div class="dots" id="dots-slideshow2"></div>
+</div>
+
+---
+
+## Auriga
+Coilgun company
+
+**Technologies:** Mechanical Design, Manufacturing, Electronics
+
+<div class="slideshow-container" id="slideshow3">
+
+  <div class="slide">
+    <img src="/assets/figures/auriga3DPrinters.jpg" alt="3D printers">
+    <p class="slide-caption">3D printing farm. I sold the promise of 3D printing, and next thing we know I was head of the 3D printing department. I ordered, built, maintained all 2 large scale printers, 2 bambu printers, and a resin printer. I was also the go to guy for any part involving 3D printing and rapid prototyping. My parts were not only used as cheap tools but for actual high load bearing purposes so I had to do structural analysis on most my parts.</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaSheetMetal.jpg" alt="Sheet metal">
+    <p class="slide-caption">Sheet metal fabrication. I designed and ordered hundreds of these</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaBusbar.jpg" alt="Busbar">
+    <p class="slide-caption">Busbar assembly for electrical connections. I came with a fastening mechanism to bolt them together with Kaptan in the middle. 6000V pass through them and even the a gap of less than 5mm would cause a short circuit in the setup and blow up the system.</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaDoubleCoil.jpg" alt="Double coil">
+    <p class="slide-caption">Double coil configuration. Had to come up with a clever way to manufacture 2 helicoils parallely and make them with consistency on the lathe. </p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaElectronicHolders2.jpg" alt="Electronic holders 2">
+    <p class="slide-caption">3D printed electronic holders. Designed them for mass manufacturing and made thousands of these in our 3D printer inhouse farm</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaLightCollimatingSetup.jpg" alt="Light collimating setup">
+    <p class="slide-caption">Light collimating setup for measurements. I used collimating lens to focus the LED light into the photodiode 4 inches away. I 3D printed a setup to adjust the focal length of the lens.</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaOscillioscope.jpg" alt="Oscilloscope">
+    <p class="slide-caption">Testing the limits of a photodiode on an oscillioscope. Set up an LED with a square wave and adjusted the frequency until the rise and fall was distinctly picked up by the photodiode</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaHelicoilInProgress.jpg" alt="Helicoil in progress">
+    <p class="slide-caption">Process of making a coil on the lathe. Have to pull the copper wire and turn the lathe simuntaneously</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaPerfectCoil.jpg" alt="Perfect coil">
+    <p class="slide-caption">Perfect coil indeed. Fiberglass wrapped perfectly without any folds and completely attached to the coil endcaps</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaResinPrintedCoil.jpg" alt="Resin printed coil">
+    <p class="slide-caption">Resin printed coil.</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/aurigaWhiteBoard.png" alt="Whiteboard">
+    <p class="slide-caption">Late night design brainstorm sessions with my mentor Patrick</p>
+  </div>
+
+  <div class="slide active">
+    <video controls>
+      <source src="/assets/figures/aurigaBikeBeingStolen.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Someone stealing my bike in LA. Life</p>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
+  
+  <div class="dots" id="dots-slideshow3"></div>
+</div>
+
+---
+
 ## Jellyfish inspired soft robot
 I designed and fabricated a jellyfish inspired soft robot that is magnetically actuated, so one can study the efficiency and thrust behavior of jellyfish using TOMO PIV. [Link to article](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=41cBkTsAAAAJ&sortby=pubdate&citation_for_view=41cBkTsAAAAJ:mVmsd5A6BfQC)  
 
@@ -84,7 +226,7 @@ I designed and fabricated a jellyfish inspired soft robot that is magnetically a
 
 **Skills:** Leadership, CAD, Rapid Prototyping, Silicone-based polymers 
 
-<div class="slideshow-container" id="slideshow1">
+<div class="slideshow-container" id="slideshow4">
 
   <div class="slide active">
     <video controls>
@@ -123,10 +265,10 @@ I designed and fabricated a jellyfish inspired soft robot that is magnetically a
   
 
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow1')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow1')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow4')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow4')">❯</a>
   
-  <div class="dots" id="dots-slideshow1"></div>
+  <div class="dots" id="dots-slideshow4"></div>
 </div>
 
 <script>
@@ -202,7 +344,7 @@ Capstone project - decided to dabble in product design! I designed and manufactu
 
 **Skills:** CAD, Multidisciplinary collaboration, Rapid Prototyping, Acoustic Design
 
-<div class="slideshow-container" id="slideshow2">
+<div class="slideshow-container" id="slideshow5">
 
   <div class="slide active">
     <img src="/assets/figures/headphonesPhotoshoot.png" alt="Headphones photoshoot">
@@ -234,10 +376,10 @@ Capstone project - decided to dabble in product design! I designed and manufactu
     <p class="slide-caption">Custom paint finish at my makerspace</p>
   </div>
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow5')">❯</a>
   
-  <div class="dots" id="dots-slideshow2"></div>
+  <div class="dots" id="dots-slideshow5"></div>
 </div>
 
 ---
@@ -247,7 +389,7 @@ A car on omniwheels thats controlled by simply moving your hand. This was made f
 
 **Skills:** TI-MCU (C language), PID controller, CAD, Fabrication, Programming Sensors and Actutors 
 
-<div class="slideshow-container" id="slideshow3">
+<div class="slideshow-container" id="slideshow6">
 
   <div class="slide active">
     <video controls>
@@ -278,20 +420,20 @@ A car on omniwheels thats controlled by simply moving your hand. This was made f
     <p class="slide-caption"> Here i was debugging the microcontroller unit. Most important lesson was wire management and keeping track of GPIOs and other pins. </p>
   </div>
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow6')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow6')">❯</a>
   
-  <div class="dots" id="dots-slideshow3"></div>
+  <div class="dots" id="dots-slideshow6"></div>
 </div>
 
 ---
 
-## Digit in MuJoCo
+## [GelSight](https://www.gelsight.com/)
 Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walking behaviors and Mujuco's terrain parameters. my PhD mentor was using NN to teach Digit to avoid elevated and irregular terrain. My goal was to design the terrain just right for Digit to barely walk. I also wrote an innovative algorithm to group objects for easier collision detection. 
 
-**Skills:** ROS, Python, C++, Mujoco, Docker
+**Technologies:** CAD, Fabrication, Polymer science, Actuator Design
 
-<div class="slideshow-container" id="slideshow5">
+<div class="slideshow-container" id="slideshow7">
 
   <div class="slide active">
     <video controls>
@@ -320,165 +462,6 @@ Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walkin
   <div class="slide">
     <img src="/assets/figures/digitOptimization.png" alt="Digit optimization">
     <p class="slide-caption">I also wrote an algorithm to group multiple objects together for collision avoidance. Digit discretizes every obstacle in front of it and runs a collision check and this gets redundant if there's a large object and Digit has to run a collision check for each and every point. With my algorithm, it groups all points into rectangles and does a single collision check for a rectangle as a whole. Improved speed by almost 10x</p>
-  </div>
-  
-  <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow5')">❯</a>
-  
-  <div class="dots" id="dots-slideshow5"></div>
-</div>
-
----
-
-## [GelSight](https://www.gelsight.com/)
-Worked with tactile sensing technology to enable robots to perceive surface textures and deformations through touch, enhancing manipulation capabilities.
-
-**Technologies:** CAD, Fabrication, Polymer science, Actuator Design
-
-<div class="slideshow-container" id="slideshow6">
-
-  <div class="slide active">
-    <video controls style="max-width: 60%; display: block; margin: 0 auto;">
-      <source src="/assets/figures/gelsightGearPulley.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="slide-caption">Designed a gear pulley mechanism for the parallel gripper for Digit Robot. This also allows precise reading of precise torque from servo motor to force in gelsight. The previous cable driven mechansim was causing many issues</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/gelsightCablePulley.png" alt="GelSight cable pulley">
-    <p class="slide-caption">Cable pulley system design. I initially built this from a previous iteration but it was causing slip and slack issues</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/gelsightPolymer.png" alt="GelSight polymer">
-    <p class="slide-caption">Polymer material used for tactile sensing. I pulled vacuum from the solution and constructed polymers as clear as possible</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/gelsightCreepyUncle.jpg" alt="GelSight application">
-    <p class="slide-caption">Me acting cool</p>
-  </div>
-  
-  <a class="prev" onclick="changeSlide(-1, 'slideshow6')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow6')">❯</a>
-  
-  <div class="dots" id="dots-slideshow6"></div>
-</div>
-
----
-
-## Auriga
-Coilgun company
-
-**Technologies:** Mechanical Design, Manufacturing, Electronics
-
-<div class="slideshow-container" id="slideshow7">
-
-  <div class="slide active">
-    <video controls>
-      <source src="/assets/figures/aurigaBikeBeingStolen.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="slide-caption">Vehicle demonstration</p>
-  </div>
-
-  <div class="slide">
-    <video controls>
-      <source src="/assets/figures/aurigaHelicoilVideo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="slide-caption">Helicoil installation process</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/auriga3DPrinters.jpg" alt="3D printers">
-    <p class="slide-caption">3D printing setup for component fabrication</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaBusbar.jpg" alt="Busbar">
-    <p class="slide-caption">Busbar assembly for electrical connections</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaCapacitorPlacement.png" alt="Capacitor placement">
-    <p class="slide-caption">Capacitor placement design</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaCoilSeperator.jpg" alt="Coil separator">
-    <p class="slide-caption">Coil separator component</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaCoilStraightner.jpg" alt="Coil straightener">
-    <p class="slide-caption">Coil straightening tool</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaDoubleCoil.jpg" alt="Double coil">
-    <p class="slide-caption">Double coil configuration</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaElectronicHolder.jpg" alt="Electronic holder">
-    <p class="slide-caption">Electronic component holder design</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaElectronicHolders2.jpg" alt="Electronic holders 2">
-    <p class="slide-caption">Additional electronic holder configurations</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaHelicoilInProgress.jpg" alt="Helicoil in progress">
-    <p class="slide-caption">Helicoil installation in progress</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaLightCollimatingSetup.jpg" alt="Light collimating setup">
-    <p class="slide-caption">Light collimating setup for measurements</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaMillPic.jpeg" alt="Mill picture">
-    <p class="slide-caption">Milling operations</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaOscillioscope.jpg" alt="Oscilloscope">
-    <p class="slide-caption">Oscilloscope testing and diagnostics</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaPerfectCoil.jpg" alt="Perfect coil">
-    <p class="slide-caption">Finished coil assembly</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaPliers.jpg" alt="Pliers">
-    <p class="slide-caption">Custom tooling for assembly</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaResinPrintedCoil.jpg" alt="Resin printed coil">
-    <p class="slide-caption">Resin printed coil components</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaResinPrinting.jpg" alt="Resin printing">
-    <p class="slide-caption">Resin printing process</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaSheetMetal.jpg" alt="Sheet metal">
-    <p class="slide-caption">Sheet metal fabrication</p>
-  </div>
-
-  <div class="slide">
-    <img src="/assets/figures/aurigaWhiteBoard.png" alt="Whiteboard">
-    <p class="slide-caption">Design and planning sessions</p>
   </div>
   
   <a class="prev" onclick="changeSlide(-1, 'slideshow7')">❮</a>
