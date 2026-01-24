@@ -88,6 +88,46 @@ Implemented various optimal control algorithms and simulations for robotic syste
     <img src="/assets/figures/OCHw1Q2.png" alt="Optimal Control Problem">
     <p class="slide-caption">Optimal control problem formulation and solution</p>
   </div>
+
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/OC3Drones.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Three drones optimal control simulation</p>
+  </div>
+
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/OCbrick.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Brick optimal control demonstration</p>
+  </div>
+
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/OCConvexMPC.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Convex Model Predictive Control implementation</p>
+  </div>
+
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/OCinfiniteHorizonLQR.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Infinite Horizon Linear Quadratic Regulator</p>
+  </div>
+
+  <div class="slide">
+    <video controls>
+      <source src="/assets/figures/OCTVQLR.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Time-Varying Quadratic Linear Regulator</p>
+  </div>
   
   <a class="prev" onclick="changeSlide(-1, 'slideshow1')">❮</a>
   <a class="next" onclick="changeSlide(1, 'slideshow1')">❯</a>
@@ -97,12 +137,50 @@ Implemented various optimal control algorithms and simulations for robotic syste
 
 ---
 
+## Robotics
+Manipulator control and trajectory planning projects demonstrating robotic arm kinematics, dynamics, and path optimization.
+
+**Skills:** Python, MATLAB, Kinematics, Dynamics, Motion Planning, Manipulability Analysis
+
+<div class="slideshow-container" id="slideshow2">
+
+  <div class="slide active">
+    <video controls>
+      <source src="/assets/figures/RoboDrawingWord.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="slide-caption">Robotic manipulator drawing a word using trajectory planning</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/RoboJointTorques.png" alt="Robot Joint Torques">
+    <p class="slide-caption">Joint torque analysis for robotic manipulator</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/RobomanDrawing.png" alt="Roboman Drawing">
+    <p class="slide-caption">Manipulator trajectory visualization</p>
+  </div>
+
+  <div class="slide">
+    <img src="/assets/figures/RoboManipulability.png" alt="Manipulability Analysis">
+    <p class="slide-caption">Manipulability ellipsoid analysis for workspace optimization</p>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+  
+  <div class="dots" id="dots-slideshow2"></div>
+</div>
+
+---
+
 ## Digit in MuJoCo
-Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walking behaviors and Mujuco's terrain parameters. my PhD mentor was using NN to teach Digit to avoid elevated and irregular terrain. My goal was to design the terrain just right for Digit to barely walk. I also wrote an innovative algorithm to group objects for easier collision detection. 
+Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walking behaviors and Mujuco's terrain parameters. my PhD mentor was using NN to teach Digit to avoid elevated and irregular terrain. My goal was to design the terrain just right for Digit to barely walk. I also wrote an innovative algorithm for easier collision detection and grouping nearby objects. 
 
 **Skills:** ROS, Python, C++, Mujoco, Docker
 
-<div class="slideshow-container" id="slideshow2">
+<div class="slideshow-container" id="slideshow3">
 
   <div class="slide active">
     <video controls>
@@ -130,27 +208,27 @@ Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walkin
 
   <div class="slide">
     <img src="/assets/figures/digitOptimization.png" alt="Digit optimization">
-    <p class="slide-caption">I also wrote an algorithm to group multiple objects together for collision avoidance. Digit discretizes every obstacle in front of it and runs a collision check and this gets redundant if there's a large object and Digit has to run a collision check for each and every point. With my algorithm, it groups all points into rectangles and does a single collision check for a rectangle as a whole. Improved speed by almost 10x</p>
+    <p class="slide-caption">I designed an optimization algorithm that groups multiple collision points into bounding rectangles for efficient obstacle avoidance. Digit's default approach discretizes every obstacle and checks collisions for each individual point, which becomes redundant when handling large objects. My algorithm clusters nearby points into rectangles and performs a single collision check per rectangle instead. This approach improved performance by approximately 10x compared to the point-by-point method.</p>
   </div>
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
   
-  <div class="dots" id="dots-slideshow2"></div>
+  <div class="dots" id="dots-slideshow3"></div>
 </div>
 
 ---
 
 ## Auriga
-Coilgun company
+An electromagnatic launching startup competing with SpaceX.
 
-**Technologies:** Mechanical Design, Manufacturing, Electronics
+**Skills** CAD, Electronics, Structural Analysis, Optics, Working 12+ hrs, Fiberglass Sheetlayup, Rapid Prototyping, Machining, First principle thinking, Design for X, etc  
 
-<div class="slideshow-container" id="slideshow3">
+<div class="slideshow-container" id="slideshow4">
 
   <div class="slide active">
     <img src="/assets/figures/auriga3DPrinters.jpg" alt="3D printers">
-    <p class="slide-caption">3D printing farm. I sold the promise of 3D printing, and next thing we know I was head of the 3D printing department. I ordered, built, maintained all 2 large scale printers, 2 bambu printers, and a resin printer. I was also the go to guy for any part involving 3D printing and rapid prototyping. My parts were not only used as cheap tools but for actual high load bearing purposes so I had to do structural analysis on most my parts.</p>
+    <p class="slide-caption">3D printing farm. I sold the promise of 3D printing, and next thing we know I was head of the 3D printing department. I ordered, built, maintained all 2 large scale printers, 2 Bambu printers, and a resin printer. I was also the go to guy for any part involving 3D printing and rapid prototyping. My parts were not only used as convenient tooling but for actual high load bearing purposes so I had to do structural analysis on most my parts.</p>
   </div>
 
   <div class="slide">
@@ -160,7 +238,7 @@ Coilgun company
 
   <div class="slide">
     <img src="/assets/figures/aurigaBusbar.jpg" alt="Busbar">
-    <p class="slide-caption">Busbar assembly for electrical connections. I came with a fastening mechanism to bolt them together with Kaptan in the middle. 6000V pass through them and even the a gap of less than 5mm would cause a short circuit in the setup and blow up the system.</p>
+    <p class="slide-caption">Busbar assembly for electrical connections. I designed a fastening mechanism to bolt them together with Kaptan in the middle. 6000V pass through them and even the tiniest air gap would cause a short circuit in the setup and blow up the system. So my fastening method involved keeping them secure enough to withstand 5kN of force while maintaning an insulated gap of 6mm.</p>
   </div>
 
   <div class="slide">
@@ -170,17 +248,17 @@ Coilgun company
 
   <div class="slide">
     <img src="/assets/figures/aurigaElectronicHolders2.jpg" alt="Electronic holders 2">
-    <p class="slide-caption">3D printed electronic holders. Designed them for mass manufacturing and made thousands of these in our 3D printer inhouse farm</p>
+    <p class="slide-caption">3D printed electronic holders. Designed them for mass manufacturing and made thousands of these in our inhouse 3D printer farm</p>
   </div>
 
   <div class="slide">
     <img src="/assets/figures/aurigaLightCollimatingSetup.jpg" alt="Light collimating setup">
-    <p class="slide-caption">Light collimating setup for measurements. I used collimating lens to focus the LED light into the photodiode 4 inches away. I 3D printed a setup to adjust the focal length of the lens.</p>
+    <p class="slide-caption">Light collimating setup for measurements. I used concave lens to focus the LED light into the photodiode 4 inches away. I 3D printed a setup to adjust the focal length of the lens.</p>
   </div>
 
   <div class="slide">
     <img src="/assets/figures/aurigaOscillioscope.jpg" alt="Oscilloscope">
-    <p class="slide-caption">Testing the limits of a photodiode on an oscillioscope. Set up an LED with a square wave and adjusted the frequency until the rise and fall was distinctly picked up by the photodiode</p>
+    <p class="slide-caption">Testing the limits of a photodiode on an oscillioscope.I set up an LED with a square wave and adjusted the frequency until the rise and fall was distinctly picked up by the photodiode. This validated the speed at which the photodiode was able to respond to light changes</p>
   </div>
 
   <div class="slide">
@@ -211,10 +289,10 @@ Coilgun company
     <p class="slide-caption">Someone stealing my bike in LA. Life</p>
   </div>
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow4')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow4')">❯</a>
   
-  <div class="dots" id="dots-slideshow3"></div>
+  <div class="dots" id="dots-slideshow4"></div>
 </div>
 
 ---
@@ -226,7 +304,7 @@ I designed and fabricated a jellyfish inspired soft robot that is magnetically a
 
 **Skills:** Leadership, CAD, Rapid Prototyping, Silicone-based polymers 
 
-<div class="slideshow-container" id="slideshow4">
+<div class="slideshow-container" id="slideshow5">
 
   <div class="slide active">
     <video controls>
@@ -265,10 +343,10 @@ I designed and fabricated a jellyfish inspired soft robot that is magnetically a
   
 
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow4')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow4')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow5')">❯</a>
   
-  <div class="dots" id="dots-slideshow4"></div>
+  <div class="dots" id="dots-slideshow5"></div>
 </div>
 
 <script>
@@ -344,7 +422,7 @@ Capstone project - decided to dabble in product design! I designed and manufactu
 
 **Skills:** CAD, Multidisciplinary collaboration, Rapid Prototyping, Acoustic Design
 
-<div class="slideshow-container" id="slideshow5">
+<div class="slideshow-container" id="slideshow6">
 
   <div class="slide active">
     <img src="/assets/figures/headphonesPhotoshoot.png" alt="Headphones photoshoot">
@@ -376,10 +454,10 @@ Capstone project - decided to dabble in product design! I designed and manufactu
     <p class="slide-caption">Custom paint finish at my makerspace</p>
   </div>
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow5')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow6')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow6')">❯</a>
   
-  <div class="dots" id="dots-slideshow5"></div>
+  <div class="dots" id="dots-slideshow6"></div>
 </div>
 
 ---
@@ -389,7 +467,7 @@ A car on omniwheels thats controlled by simply moving your hand. This was made f
 
 **Skills:** TI-MCU (C language), PID controller, CAD, Fabrication, Programming Sensors and Actutors 
 
-<div class="slideshow-container" id="slideshow6">
+<div class="slideshow-container" id="slideshow7">
 
   <div class="slide active">
     <video controls>
@@ -420,10 +498,10 @@ A car on omniwheels thats controlled by simply moving your hand. This was made f
     <p class="slide-caption"> Here i was debugging the microcontroller unit. Most important lesson was wire management and keeping track of GPIOs and other pins. </p>
   </div>
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow6')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow6')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow7')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow7')">❯</a>
   
-  <div class="dots" id="dots-slideshow6"></div>
+  <div class="dots" id="dots-slideshow7"></div>
 </div>
 
 ---
@@ -433,7 +511,7 @@ Worked with tactile sensing technology to enable robots to perceive surface text
 
 **Technologies:** CAD, Fabrication, Polymer science, Actuator Design
 
-<div class="slideshow-container" id="slideshow7">
+<div class="slideshow-container" id="slideshow8">
 
   <div class="slide active">
     <video controls style="max-width: 60%; display: block; margin: 0 auto;">
@@ -458,8 +536,8 @@ Worked with tactile sensing technology to enable robots to perceive surface text
     <p class="slide-caption">Me acting cool</p>
   </div>
   
-  <a class="prev" onclick="changeSlide(-1, 'slideshow7')">❮</a>
-  <a class="next" onclick="changeSlide(1, 'slideshow7')">❯</a>
+  <a class="prev" onclick="changeSlide(-1, 'slideshow8')">❮</a>
+  <a class="next" onclick="changeSlide(1, 'slideshow8')">❯</a>
   
-  <div class="dots" id="dots-slideshow7"></div>
+  <div class="dots" id="dots-slideshow8"></div>
 </div>
