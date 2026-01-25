@@ -50,9 +50,7 @@ Worked at a customer service front desk assisting clients with printing, editing
 **Duration:** Fall 2024  
 **Location:** Los Angeles, CA 
 
-- Made something not break
-
-**Technologies Used:** [List technologies]
+[View Project Details →](/projects/#auriga)
 
 ---
 

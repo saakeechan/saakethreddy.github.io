@@ -78,9 +78,9 @@ permalink: /projects/
 </style>
 
 ## Optimal Control
-Projects I have done for a course in optimal control offered by CMU by Zac Manchester.
+Projects I have done for a course in optimal control offered by CMU and taught by Zac Manchester.
 
-**Skills:** Julia and optimization
+**Skills:** Julia, LQR, MPC, DDP, SQP, DIRCOL and general optimization
 
 <div class="slideshow-container" id="slideshow1">
 
@@ -89,7 +89,7 @@ Projects I have done for a course in optimal control offered by CMU by Zac Manch
       <source src="/assets/figures/OC3Drones.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Formulated multi-agent trajectory optimization with collision avoidance constraints. Implemented direct collocation using IPOPT solver using implicit Hermite-Simpson integration to handle nonlinear dynamics with inequality and boundary constraints.</p>
+    <p class="slide-caption">Formulated multi-agent trajectory optimization with collision avoidance constraints. Implemented direct collocation using IPOPT solver using implicit Hermite-Simpson integration to handle nonlinear dynamics with inequality and boundary constraints</p>
   </div>
 
   <div class="slide">
@@ -97,7 +97,7 @@ Projects I have done for a course in optimal control offered by CMU by Zac Manch
       <source src="/assets/figures/OCTVQLR.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Implemented iterative LQR (DDP with Gauss Newton) for nonlinear trajectory optimization to solve a cart-pole swing-up maneuver. Deployed time-varying LQR tracking controller at higher frequency to compensate for model mismatch.</p>
+    <p class="slide-caption">Implemented iterative LQR (DDP with Gauss Newton) for nonlinear trajectory optimization to solve a cart-pole swing-up maneuver. Deployed time-varying LQR tracking controller at higher frequency to compensate for model mismatch</p>
   </div>
 
   <div class="slide">
@@ -113,7 +113,7 @@ Projects I have done for a course in optimal control offered by CMU by Zac Manch
       <source src="/assets/figures/OCinfiniteHorizonLQR.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Solved a infinite horizon LQR problem for a cart-pole problem. Initial conditions started in a linearity valid region so was able to do basic LQR.</p>
+    <p class="slide-caption">Solved a infinite horizon LQR problem for a cart-pole problem. Initial conditions started in a linearity valid region so was able to do basic LQR</p>
   </div>
 
   <div class="slide">
@@ -153,7 +153,7 @@ Implemented manipulator control and trajectory planning demonstrating robotic ar
   </div>
 
   <div class="slide">
-    <img src="/assets/figures/RoboControlSchematic.png" alt="Control Schematic">
+    <img src="/assets/figures/RobotControlSchematic.png" alt="Control Schematic">
     <p class="slide-caption">Implemented a PID control schematic in Simulink. Also implemented gravity compensation in joint torques.</p>
   </div>
 
@@ -194,7 +194,7 @@ Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walkin
       <source src="/assets/figures/digitWalkingCloseup.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Close-up view of Digit walking to get a better look at slip behavior and Mujoco's contact solver parameters</p>
+    <p class="slide-caption">Close-up view of Digit walking to get a better look at slip behavior and MuJoCo's contact solver parameters</p>
   </div>
 
   <div class="slide">
@@ -202,7 +202,7 @@ Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walkin
       <source src="/assets/figures/digitWalkingSlope.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Digit walking on sloped terrain. It's learning it's behavior on slope (moreso to avoid it)</p>
+    <p class="slide-caption">Digit walking on sloped terrain. It's learning it's behavior on slope (moreso how to avoid it)</p>
   </div>
 
   <div class="slide">
@@ -210,7 +210,7 @@ Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walkin
       <source src="/assets/figures/digitWalkingWithParameters.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Learning its gait placement on irregular terrain</p>
+    <p class="slide-caption">Learning gait placement on irregular terrain</p>
   </div>
 
   <div class="slide">
@@ -270,7 +270,7 @@ An electromagnatic launching startup competing with SpaceX.
 
   <div class="slide">
     <img src="/assets/figures/aurigaHelicoilInProgress.jpg" alt="Helicoil in progress">
-    <p class="slide-caption">Process of making a coil on the lathe. Have to pull the copper wire and turn the lathe simuntaneously</p>
+    <p class="slide-caption">Process of making a coil on the lathe. Have to pull the copper wire and turn the lathe simuntaneously. I perfected the art of making the coil on the lathe upto millimeter precision.</p>
   </div>
 
   <div class="slide">
@@ -305,7 +305,8 @@ An electromagnatic launching startup competing with SpaceX.
 ---
 
 ## Jellyfish inspired soft robot
-I designed and fabricated a jellyfish inspired soft robot that is magnetically actuated, so one can study the efficiency and thrust behavior of jellyfish using TOMO PIV. [Link to article](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=41cBkTsAAAAJ&sortby=pubdate&citation_for_view=41cBkTsAAAAJ:mVmsd5A6BfQC)  
+I designed and fabricated a jellyfish inspired soft robot that is magnetically actuated, so one can study the efficiency and thrust behavior of jellyfish using TOMO PIV.
+[Link to article](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=41cBkTsAAAAJ&sortby=pubdate&citation_for_view=41cBkTsAAAAJ:mVmsd5A6BfQC)  
 
 [Link to Linkedin Post](https://www.linkedin.com/posts/mohammad-mohaghar-58254180_fluiddynamics-softrobotics-biomimicry-ugcPost-7317370218140340226-VcsT?utm_source=share&utm_medium=member_desktop&rcm=ACoAACy4wIsBWSE2KEbvIityOIl0HIDmpJLNE54) 
 
@@ -343,11 +344,6 @@ I designed and fabricated a jellyfish inspired soft robot that is magnetically a
     </video>
     <p class="slide-caption">How the robot should not move </p>
   </div>
-
-
-  
-
-  
 
   
   <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
