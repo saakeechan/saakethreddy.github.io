@@ -9,10 +9,10 @@ baseurl: ""
 # Navigation menu
 navbar-links:
   Home: "/"
-  Education: "education"
-  Research: "research"
   Projects: "projects"
+  Research: "research"
   Work Experience: "work-experience"
+  Education: "education"
   C.V.: "cv"
 
 
