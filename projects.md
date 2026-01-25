@@ -227,7 +227,7 @@ Simulated Agility Robotics' Digit humanoid robot in MuJoCo, investigating walkin
 ---
 
 ## Auriga
-An electromagnatic launching startup competing with SpaceX.
+A startup competing with SpaceX by electromagnetically launching satellites into space at Mach 6 speed.
 
 **Skills** CAD, Electronics, Structural Analysis, Optics, Working 12+ hrs every day, Fiberglass Sheetlayup, Rapid Prototyping, Machining, Electromagnetics, First principle thinking, Design for X, etc  
 
@@ -519,7 +519,7 @@ Worked with tactile sensing technology to enable robots to perceive surface text
       <source src="/assets/figures/gelsightGearPulley.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <p class="slide-caption">Designed a gear pulley mechanism for the parallel gripper for Digit Robot. This also allows precise reading of precise torque from servo motor to force in gelsight. The previous cable driven mechansim was causing many issues</p>
+    <p class="slide-caption">Designed a gear pulley mechanism for the parallel gripper for Digit Robot. This also allows precise reading of torque from servo motor to force in gelsight. The previous cable driven mechansim was causing many issues</p>
   </div>
 
   <div class="slide">
