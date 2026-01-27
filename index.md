@@ -133,7 +133,7 @@ permalink: /
 
     <h2>Hobbies</h2>
     <p>
-    My hobbies include swimming, basketball, squash, table tennis, rock climbing, chess, hiking, pool, movies, lifting ...pretty much anything physical
+    My hobbies include swimming, basketball, squash, table tennis, rock climbing, chess, hiking, pool, movies, lifting ...pretty much anything physical.
     </p>
 
 
